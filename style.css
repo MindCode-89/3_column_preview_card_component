@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+/*CONTAINER ABUELO*/
+
+.main__section {
+  margin: ;
+  margin: 8em auto 0 9em;
+
+  background-color: #0000;
+}
+
+/* ContaINER PADRE DE LOS 3 CONTAINERS HIJOS*/
+
+.sections__containers {
+  background-color: white;
+  width: 100em;
+  height: 42em;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+/*  3- CONTAINER HIJOS */
+
+.first__container {
+  background-color: #e28525;
+  color: white;
+  margin-top: 5em;
+  width: 22em;
+  height: 32em;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.first__image {
+  display: flex;
+  text-align: start;
+  margin-top: 3.5em;
+  margin-left: 3em;
+}
+
+.title_first_container {
+  text-align: start;
+  margin-top: 2em;
+  margin-left: 0.8em;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.paragraf_firts_container {
+    line-height: 1.5em;
+  margin-top: 2em;
+  margin-left: 2em;
+  font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+button {
+  margin-top: 5em;
+  width: 9em;
+  height: 3.5em;
+  border-radius: 25px;
+  background-color: white;
+  margin-left: 35px;
+  border-color: #e28525;
+  border: transparent;
+}
+
+button:hover {
+   background-color: #e28525;
+  }
+  a:hover {
+    color: black;
+   }
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  color: #e28525;
+  text-decoration: none;
+  font-size: 12px;
+  
+}
+
+.second__container {
+  background-color: #016972;
+  color: white;
+  margin-top: 5em;
+  width: 22em;
+  height: 32em;
+}
+
+.tree__container {
+  background-color: #00403f;
+  color: white;
+  margin-top: 5em;
+  width: 22em;
+  height: 32em;
+  border-radius: 0 15px 15px 0;
+}
+
+.first__image {
+  text-align: start;
+  margin-right: 20px;
+}
+
+
