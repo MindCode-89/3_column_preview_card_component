@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -12,27 +10,22 @@ body {
   background-color: black;
 }
 
-/*CONTAINER ABUELO*/
-
-.main__section {
-  margin: ;
-  margin: 8em auto 0 9em;
-
-  background-color: #0000;
-}
-
 /* ContaINER PADRE DE LOS 3 CONTAINERS HIJOS*/
 
 .sections__containers {
   background-color: white;
-  width: 100em;
+  width: 90em;
   height: 42em;
-  margin-top: 5em;
+  margin-left: 10em;
+  margin-top: 10em;
+  margin-bottom: 5em;
   display: flex;
   justify-content: center;
 }
 
 /*  3- CONTAINER HIJOS */
+
+/* first__container*/
 
 .first__container {
   background-color: #e28525;
@@ -59,15 +52,16 @@ body {
 }
 
 .paragraf_firts_container {
-    line-height: 1.5em;
+  line-height: 1.5em;
   margin-top: 2em;
   margin-left: 2em;
   font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  font-weight: 500;
+  font-style: normal;
 }
-button {
-  margin-top: 5em;
+
+.button_a {
+  margin-top: 4em;
   width: 9em;
   height: 3.5em;
   border-radius: 25px;
@@ -77,22 +71,16 @@ button {
   border: transparent;
 }
 
-button:hover {
-   background-color: #e28525;
-  }
-  a:hover {
-    color: black;
-   }
-
-a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+.a_btn_a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
   color: #e28525;
   text-decoration: none;
   font-size: 12px;
-  
 }
+
+/* second__container*/
 
 .second__container {
   background-color: #016972;
@@ -101,6 +89,53 @@ a {
   width: 22em;
   height: 32em;
 }
+
+.second__image {
+  display: flex;
+  text-align: start;
+  margin-top: 3.5em;
+  margin-left: 3em;
+}
+
+.title_second_container {
+  text-align: start;
+  margin-top: 2em;
+  margin-left: 0.8em;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.paragraf_second_container {
+  line-height: 1.5em;
+  margin-top: 2em;
+  margin-left: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.button_b {
+  margin-top: 4em;
+  width: 9em;
+  height: 3.5em;
+  color: #016972;
+  border-radius: 25px;
+  background-color: white;
+  margin-left: 35px;
+  border-color: #016972;
+  border: transparent;
+}
+
+.a_btn_b {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #016972;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* tree__container*/
 
 .tree__container {
   background-color: #00403f;
@@ -111,9 +146,126 @@ a {
   border-radius: 0 15px 15px 0;
 }
 
-.first__image {
+.tree__image {
+  display: flex;
   text-align: start;
-  margin-right: 20px;
+  margin-top: 3.5em;
+  margin-left: 3em;
 }
 
+.title_tree_container {
+  text-align: start;
+  margin-top: 2em;
+  margin-left: 0.8em;
+  font-size: 40px;
+  text-transform: uppercase;
+}
 
+.paragraf_tree_container {
+  line-height: 1.5em;
+  margin-top: 2em;
+  margin-left: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.button_c {
+  margin-top: 4em;
+  width: 9em;
+  height: 3.5em;
+  border-radius: 25px;
+  background-color: white;
+  margin-left: 35px;
+  border-color: #e28525;
+  border: transparent;
+}
+
+.a_btn_c {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #00403f;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1em;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* MEDIAS QUERIES*/
+
+@media (min-width: 375px) and (max-width: 667px) {
+  body {
+    background: white;
+  }
+
+  .sections__containers {
+    width: 20em;
+    height: 80em;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 0;
+  }
+
+  .first__container,
+  .second__container,
+  .tree__container {
+    width: 20em;
+    margin: 0;
+    padding: 0;
+    height: 30em;
+  }
+
+   .first__container{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+
+  .tree__container {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  }
+  
+
+  .title_first_container,
+  .title_second_container,
+  .title_tree_container {
+    
+    font-size: 24px;
+
+  
+    }
+    .paragraf_firts_container , 
+    .paragraf_second_container , 
+    .paragraf_tree_container {
+      font-size: 14px;
+
+   
+  }
+
+  .attribution {
+    font-size: 15px;
+    display: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: black;
+    text-decoration: none;
+  }
+}
